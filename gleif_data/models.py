@@ -57,8 +57,11 @@ class LeiRecordFilter(BaseModel):
     """
 
     country: Optional[CountryAlpha2] = None
+    city: Optional[str] = None
+    postal_code: Optional[str] = None
     legal_form: Annotated[str, AfterValidator(is_legal_form_valid)]
     status: Optional[Annotated[str, AfterValidator(is_registration_status_valid)]] = None
+    lei_issuer: Optional[str] = None
 
 
 class LegalName(BaseModel):
