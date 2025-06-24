@@ -77,11 +77,11 @@ class GleifData:
         next_page = res['links'].get('first')
         data_dicts = []
 
-        for _ in range(1, last_page):
+        for _ in range(1, last_page+1):
             response = requests.get(next_page)
 
             if not response.ok:
-                break
+                continue
 
             res = response.json()
             data_dicts.extend(res.get('data', []))
