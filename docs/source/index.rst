@@ -13,4 +13,4 @@ Welcome to GleifData's documentation!
    :caption: examples
    :hidden:
 
-   examples
+   source/examples
