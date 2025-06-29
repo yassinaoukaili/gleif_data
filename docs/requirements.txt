@@ -1,1 +1,9 @@
 sphinx-rtd-theme==3.0.2
+sphinx
+sphinx-copybutton
+nbsphinx
+sphinxcontrib-rsvgconverter
+ipython
+sphinx-gallery
+nbconvert
+ipykernel
