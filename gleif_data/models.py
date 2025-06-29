@@ -13,7 +13,7 @@ def is_legal_form_valid(legal_form: str) -> str:
     """
 
     try:
-        path_df = Path.cwd() / 'data' / 'elf_code_list_publication.csv'
+        path_df = Path(__file__).parent / 'data' / 'elf_code_list_publication.csv'
         df = pd.read_csv(path_df)
         elf_codes = set(df.elf_code.str.upper())
 
