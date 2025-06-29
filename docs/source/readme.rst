@@ -47,6 +47,8 @@ List of ``CompanyAttribues`` objects for OOP implementations
 
 .. code-block:: python
 
+    from gleif_data import GleifData, LeiRecordFilter
+
     filters = LeiRecordFilter(city="Roma", postal_code="00199")
     companies = GleifData.get_companies(filters)
 

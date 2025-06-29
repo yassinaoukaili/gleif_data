@@ -39,11 +39,13 @@ display(df)
 #### List of CompanyAttribues objects for OOP implementations 
 
 ```python
+from gleif_data import GleifData, LeiRecordFilter
+
 filters = LeiRecordFilter(city="Roma", postal_code="00199")
 companies = GleifData.get_companies(filters)
 
 for company in companies:
-    print(company.lei, company.legalName.name, , company.legalAddress.addressLines)
+    print(company.lei, company.legalName.name, company.legalAddress.addressLines)
 ```
 
 ---
