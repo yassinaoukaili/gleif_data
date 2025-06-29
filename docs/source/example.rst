@@ -2,4 +2,4 @@ Example
 ========
 
 .. nbgallery::
-   example/example_gleif.ipynb
+   source/example/example_gleif.ipynb
