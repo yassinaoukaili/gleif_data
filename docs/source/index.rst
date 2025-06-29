@@ -11,6 +11,5 @@ Welcome to GleifData's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: examples
-   :hidden:
 
    source/examples
